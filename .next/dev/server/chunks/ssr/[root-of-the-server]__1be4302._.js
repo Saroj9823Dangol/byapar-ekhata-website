@@ -2936,9 +2936,34 @@ const metadata = {
     },
     description,
     icons: {
-        icon: "/logo.jpeg",
-        shortcut: "/logo.jpeg",
-        apple: "/logo.jpeg"
+        icon: [
+            {
+                url: "/favicon.ico",
+                sizes: "any"
+            },
+            {
+                url: "/favicon-32.png",
+                type: "image/png",
+                sizes: "32x32"
+            },
+            {
+                url: "/favicon-16.png",
+                type: "image/png",
+                sizes: "16x16"
+            },
+            {
+                url: "/icon-192.png",
+                type: "image/png",
+                sizes: "192x192"
+            },
+            {
+                url: "/icon-512.png",
+                type: "image/png",
+                sizes: "512x512"
+            }
+        ],
+        shortcut: "/favicon.ico",
+        apple: "/apple-touch-icon.png"
     },
     keywords: [
         "accounting software Nepal",
@@ -2965,7 +2990,7 @@ function RootLayout({ children }) {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$8_$40$babel$2b$core$40$7$2e$29$2e$7_$40$types$2b$node$40$20$2e$19$2e$43_react$2d$dom$40$19$2e$2$2e$8_react$40$19$2e$2$2e$8_$5f$react$40$19$2e$2$2e$8$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$site$2d$header$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SiteHeader"], {}, void 0, false, {
                     fileName: "[project]/src/app/layout.tsx",
-                    lineNumber: 65,
+                    lineNumber: 71,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$8_$40$babel$2b$core$40$7$2e$29$2e$7_$40$types$2b$node$40$20$2e$19$2e$43_react$2d$dom$40$19$2e$2$2e$8_react$40$19$2e$2$2e$8_$5f$react$40$19$2e$2$2e$8$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -2973,23 +2998,23 @@ function RootLayout({ children }) {
                     children: children
                 }, void 0, false, {
                     fileName: "[project]/src/app/layout.tsx",
-                    lineNumber: 66,
+                    lineNumber: 72,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$8_$40$babel$2b$core$40$7$2e$29$2e$7_$40$types$2b$node$40$20$2e$19$2e$43_react$2d$dom$40$19$2e$2$2e$8_react$40$19$2e$2$2e$8_$5f$react$40$19$2e$2$2e$8$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$site$2d$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SiteFooter"], {}, void 0, false, {
                     fileName: "[project]/src/app/layout.tsx",
-                    lineNumber: 67,
+                    lineNumber: 73,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/layout.tsx",
-            lineNumber: 64,
+            lineNumber: 70,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/layout.tsx",
-        lineNumber: 60,
+        lineNumber: 66,
         columnNumber: 5
     }, this);
 }

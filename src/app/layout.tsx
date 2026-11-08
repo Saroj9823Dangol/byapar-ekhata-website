@@ -34,9 +34,15 @@ export const metadata: Metadata = {
   },
   description,
   icons: {
-    icon: "/logo.jpeg",
-    shortcut: "/logo.jpeg",
-    apple: "/logo.jpeg",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-16.png", type: "image/png", sizes: "16x16" },
+      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
+      { url: "/icon-512.png", type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
   keywords: [
     "accounting software Nepal",
