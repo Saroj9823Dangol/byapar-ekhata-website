@@ -83,7 +83,7 @@ export function AppMockup() {
                 <div className="h-6 w-px bg-paper/15" />
                 <div>
                   <p className="text-[8.5px] tracking-wide text-paper/55 uppercase">To receive</p>
-                  <p className="tnum text-[11.5px] font-medium text-[#ffb4ac]">64,250</p>
+                  <p className="tnum text-[11.5px] font-medium text-brand-bright">64,250</p>
                 </div>
                 <div className="h-6 w-px bg-paper/15" />
                 <div>

@@ -1,22 +1,23 @@
 @import "tailwindcss";
 
 @theme {
-  /* Paper & ink */
-  --color-paper: #faf7f1;
-  --color-paper-2: #f3ede3;
-  --color-paper-3: #ece4d6;
-  --color-ink: #1a1712;
-  --color-ink-soft: #4b453a;
-  --color-muted: #837a6b;
-  --color-line: #e5ddce;
-  --color-line-strong: #d2c7b3;
+  /* Paper & ink — cooled toward the logo's white + navy */
+  --color-paper: #f8fafd;
+  --color-paper-2: #eef3fa;
+  --color-paper-3: #e4ecf7;
+  --color-ink: #0d1b33;
+  --color-ink-soft: #3f4d66;
+  --color-muted: #78859b;
+  --color-line: #e1e8f3;
+  --color-line-strong: #c8d4e6;
 
-  /* Brand */
-  --color-brand: #b81f26;
-  --color-brand-deep: #8a161c;
-  --color-brand-wash: #f7e6e4;
-  --color-pine: #1e4a38;
-  --color-pine-wash: #e3ece6;
+  /* Brand — the logo blue */
+  --color-brand: #0b63f2;
+  --color-brand-deep: #0848c2;
+  --color-brand-wash: #e7efff;
+  --color-brand-bright: #a9c7ff;
+  --color-pine: #10254f;
+  --color-pine-wash: #e6ecf9;
   --color-amber: #a9701a;
   --color-amber-wash: #f6ecda;
 

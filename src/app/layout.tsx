@@ -33,6 +33,11 @@ export const metadata: Metadata = {
     template: "%s · Byapar eKhata",
   },
   description,
+  icons: {
+    icon: "/logo.jpeg",
+    shortcut: "/logo.jpeg",
+    apple: "/logo.jpeg",
+  },
   keywords: [
     "accounting software Nepal",
     "khata app",

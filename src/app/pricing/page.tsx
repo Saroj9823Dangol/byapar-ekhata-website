@@ -98,7 +98,7 @@ export default function PricingPage() {
                   <li key={h} className="flex items-start gap-2.5 text-[13.5px]">
                     <Tick
                       className={`mt-0.5 h-3.5 w-3.5 shrink-0 ${
-                        plan.featured ? "text-[#ffb4ac]" : "text-brand"
+                        plan.featured ? "text-brand-bright" : "text-brand"
                       }`}
                     />
                     <span className={plan.featured ? "text-paper/85" : "text-ink-soft"}>{h}</span>

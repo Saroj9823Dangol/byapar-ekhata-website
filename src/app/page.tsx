@@ -319,7 +319,7 @@ function OfflineBand() {
                   <p className="text-[13px] text-paper/90">{r.t}</p>
                   <p
                     className={`text-[11px] ${
-                      r.s === "Synced" ? "text-paper/45" : "text-[#ffb4ac]"
+                      r.s === "Synced" ? "text-paper/45" : "text-brand-bright"
                     }`}
                   >
                     {r.s}
@@ -378,7 +378,7 @@ function PricingPreview() {
                 {plan.highlights.map((h) => (
                   <li key={h} className="flex items-start gap-2.5 text-[13px]">
                     <Tick
-                      className={`mt-0.5 h-3.5 w-3.5 shrink-0 ${plan.featured ? "text-[#ffb4ac]" : "text-brand"}`}
+                      className={`mt-0.5 h-3.5 w-3.5 shrink-0 ${plan.featured ? "text-brand-bright" : "text-brand"}`}
                     />
                     <span className={plan.featured ? "text-paper/85" : "text-ink-soft"}>{h}</span>
                   </li>

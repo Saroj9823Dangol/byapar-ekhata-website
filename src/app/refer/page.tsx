@@ -116,7 +116,7 @@ export default function ReferPage() {
                 <div className="flex items-baseline justify-between">
                   <h3 className="display-sm text-[21px]">{t.name}</h3>
                   <p
-                    className={`tnum display-sm text-[32px] ${t.featured ? "text-[#ffb4ac]" : "text-brand"}`}
+                    className={`tnum display-sm text-[32px] ${t.featured ? "text-brand-bright" : "text-brand"}`}
                   >
                     {t.rate}
                   </p>

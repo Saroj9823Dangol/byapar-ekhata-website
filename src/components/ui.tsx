@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { site } from "@/lib/site";
@@ -9,26 +10,14 @@ export function Logo({ className = "" }: { className?: string }) {
       aria-label={`${site.name} home`}
       className={`group inline-flex items-center gap-2.5 ${className}`}
     >
-      <span className="relative flex h-8 w-8 items-center justify-center rounded-[7px] bg-ink">
-        <svg viewBox="0 0 24 24" className="h-[18px] w-[18px]" aria-hidden="true">
-          <path
-            d="M5 3.5h12.5a1.5 1.5 0 0 1 1.5 1.5v14a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 19V5A1.5 1.5 0 0 1 5 3.5Z"
-            fill="none"
-            stroke="currentColor"
-            className="text-paper"
-            strokeWidth="1.4"
-          />
-          <path d="M7.5 3.5v17" stroke="currentColor" className="text-paper" strokeWidth="1.4" />
-          <path
-            d="M11 8.5h6M11 12h6M11 15.5h4"
-            stroke="currentColor"
-            className="text-paper"
-            strokeWidth="1.4"
-            strokeLinecap="round"
-          />
-        </svg>
-        <span className="absolute -right-0.5 -bottom-0.5 h-2 w-2 rounded-full bg-brand ring-2 ring-paper" />
-      </span>
+      <Image
+        src="/logo.jpeg"
+        alt={`${site.name} logo`}
+        width={64}
+        height={64}
+        priority
+        className="h-8 w-8 rounded-[7px] object-cover shadow-[0_1px_2px_rgba(13,27,51,0.16)]"
+      />
       <span className="text-[17px] leading-none font-semibold tracking-tight">
         Byapar
         <span className="text-brand display-sm ml-1 text-[17px] font-medium">eKhata</span>
