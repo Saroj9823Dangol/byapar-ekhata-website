@@ -8,7 +8,8 @@ export const site = {
   supportEmail: "support@byaparekhata.com",
   phone: "+977 9800 000 000",
   address: "Putalisadak, Kathmandu 44600, Nepal",
-  playStore: "https://play.google.com/store/apps",
+  playStore:
+    "https://play.google.com/store/apps/details?id=com.byaparekhata.app&hl=en",
   appStore: "https://www.apple.com/app-store/",
   webLogin: "https://app.byaparekhata.com",
   established: 2024,
