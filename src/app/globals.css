@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paper & ink */
+  --color-paper: #faf7f1;
+  --color-paper-2: #f3ede3;
+  --color-paper-3: #ece4d6;
+  --color-ink: #1a1712;
+  --color-ink-soft: #4b453a;
+  --color-muted: #837a6b;
+  --color-line: #e5ddce;
+  --color-line-strong: #d2c7b3;
+
+  /* Brand */
+  --color-brand: #b81f26;
+  --color-brand-deep: #8a161c;
+  --color-brand-wash: #f7e6e4;
+  --color-pine: #1e4a38;
+  --color-pine-wash: #e3ece6;
+  --color-amber: #a9701a;
+  --color-amber-wash: #f6ecda;
+
+  /* Type */
+  --font-sans: var(--font-inter-tight), var(--font-devanagari), ui-sans-serif,
+    system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-deva: var(--font-devanagari), sans-serif;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv01";
+  }
+
+  ::selection {
+    background-color: var(--color-brand);
+    color: #fff;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@utility font-deva {
+  font-family: var(--font-deva);
+}
+
+/* Hairline rules that stay crisp on retina */
+@utility rule {
+  border-color: var(--color-line);
+}
+
+@layer utilities {
+  .display {
+    font-family: var(--font-display);
+    font-variation-settings: "SOFT" 0, "WONK" 1, "opsz" 96;
+    font-weight: 480;
+    letter-spacing: -0.02em;
+    line-height: 1.02;
+  }
+
+  .display-sm {
+    font-family: var(--font-display);
+    font-variation-settings: "SOFT" 0, "WONK" 1, "opsz" 48;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    line-height: 1.1;
+  }
+
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .legal-body h3 {
+    color: var(--color-ink);
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 1.5rem;
+  }
+
+  .legal-body ul {
+    list-style: disc;
+    padding-left: 1.15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .legal-body ol {
+    list-style: decimal;
+    padding-left: 1.15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .legal-body a {
+    color: var(--color-ink);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .legal-body strong {
+    color: var(--color-ink);
+    font-weight: 600;
+  }
+
+  .legal-body table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+  }
+
+  .legal-body th,
+  .legal-body td {
+    border-bottom: 1px solid var(--color-line);
+    padding: 0.65rem 0.75rem 0.65rem 0;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .legal-body th {
+    color: var(--color-ink);
+    font-weight: 600;
+  }
+
+  .grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@utility animate-rise {
+  animation: rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
