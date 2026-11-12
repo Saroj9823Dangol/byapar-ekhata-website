@@ -1,0 +1,18 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/contact/page": "/contact",
+  "/download/page": "/download",
+  "/epartner/privacy/page": "/epartner/privacy",
+  "/favicon.ico/route": "/favicon.ico",
+  "/features/page": "/features",
+  "/help/page": "/help",
+  "/page": "/",
+  "/pricing/page": "/pricing",
+  "/privacy/page": "/privacy",
+  "/refer/page": "/refer",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/terms/page": "/terms"
+}
